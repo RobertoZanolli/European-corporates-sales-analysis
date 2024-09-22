@@ -108,10 +108,10 @@ for _ in range(21_113):
     rows.append([client, date_of_purchase, units, price_per_unit, payment_method, payment_hour, country])
 
 # output csv
-with open('corporate_purchase.csv', 'w', newline='', encoding='utf-8') as csvfile:
+with open('corporate_sales.csv', 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
    
     writer.writerow(["client", "date_of_purchase", "units", "price_per_unit", "payment_method", "payment_hour", "country"])
     writer.writerows(rows)
 
-print("Dataset successfully generated in the file 'corporate_purchase.csv'.")
+print("Dataset successfully generated in the file 'corporate_sales.csv'.")
