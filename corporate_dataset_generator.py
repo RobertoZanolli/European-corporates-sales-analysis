@@ -1,3 +1,16 @@
+"""
+Script che genera un dataset dove ogni riga ha elementi:
+    
+client: (String) - Il nome dell'azienda cliente che ha effettuato l'acquisto.
+date_of_purchase: (String/Date) - La data in cui è stata effettuata la transazione, nel formato YYYY-MM-DD.
+units: (Int) - Il numero di unità vendute in ogni transazione.
+price_per_unit: (Double) - Il prezzo per unità venduta, espresso in euro (€).
+payment_method: (String) - Il metodo di pagamento utilizzato per la transazione. ("credit_card", "cash" e "debit_card")
+payment_hour: (String) - L'orario in cui è stato effettuato il pagamento.
+country: (String) - Il paese europeo in cui ha sede l'azienda cliente.
+
+@author: roberto
+"""
 import csv
 import random
 from datetime import datetime, timedelta
@@ -97,7 +110,8 @@ payment_methods = ["credit_card", "cash", "debit_card"]
 # generare numero arbitrario di righe (date 2023)
 rows = []
 start_date = datetime(2023, 1, 1)
-for _ in range(21_113):
+for i in range(21_113):
+    
     client = random.choice(clients)
     date_of_purchase = (start_date + timedelta(days=random.randint(0, 364))).strftime('%Y-%m-%d')
     units = random.randint(1, 100)
