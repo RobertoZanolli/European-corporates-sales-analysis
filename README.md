@@ -23,7 +23,7 @@
 <h2>Output</h2>
 <ul>
     <li><strong>Visualizzazioni:</strong> Grafici che rappresentano i dati sulle vendite per paese, permettendo di individuare tendenze e anomalie nelle vendite aziendali.</li>
-    <li><strong>Report powerBI:</strong> il report contiene una visualizzazione alternativa per i grafici. (disponibile anche in PDF)</li>
+    <li><strong>Report powerBI:</strong> il report contiene una visualizzazione alternativa per i grafici. (disponibile anche in .png)</li>
 </ul>
 
 <h2>Come usare lo script</h2>
